@@ -2,3 +2,12 @@ server:
   port: 10111
   servlet:
     context-path: /
+
+spring:
+  application:
+    name: consumer
+  cloud:
+    # Nacos 配置
+    nacos:
+      discovery:
+        server-addr: 192.168.1.20:8848

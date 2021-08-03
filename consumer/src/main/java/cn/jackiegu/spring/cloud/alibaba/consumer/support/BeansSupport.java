@@ -1,5 +1,6 @@
 package cn.jackiegu.spring.cloud.alibaba.consumer.support;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -17,6 +18,7 @@ public class BeansSupport {
      * RestTemplate Bean
      */
     @Bean
+    @LoadBalanced
     public RestTemplate restTemplate() {
         // 设置超时时间
         // SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();

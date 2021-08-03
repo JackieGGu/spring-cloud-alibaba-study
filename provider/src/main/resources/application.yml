@@ -4,7 +4,14 @@ server:
     context-path: /
 
 spring:
+  application:
+    name: provider
   datasource:
     url: jdbc:mysql://mysql.jackiegu.cn:3306/test?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: test
     password: 123$%^
+  cloud:
+    # Nacos 配置
+    nacos:
+      discovery:
+        server-addr: 192.168.1.20:8848
