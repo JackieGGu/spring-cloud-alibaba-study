@@ -1,5 +1,11 @@
 spring:
+  application:
+    name: consumer
   cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.20:8846
+        file-extension: yml
     inetutils:
       # 多网卡时为spring.cloud.client.ip-address指定IP配置方案
       # 方案一: 指定的网络地址(正则表达式)
