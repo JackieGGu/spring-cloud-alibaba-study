@@ -1,12 +1,5 @@
 spring:
-  application:
-    name: consumer
   cloud:
-    nacos:
-      config:
-        # Nacos 配置中心地址
-        server-addr: 192.168.1.20:8846
-        file-extension: yml
     inetutils:
       preferred-networks:
         - ^192\.168\.1\.\d{1,3}$
