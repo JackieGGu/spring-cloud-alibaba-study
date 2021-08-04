@@ -11,7 +11,7 @@ spring:
     username: test
     password: 123$%^
   cloud:
-    # Nacos 配置
     nacos:
       discovery:
+        # Nacos 服务发现地址
         server-addr: 192.168.1.20:8848
