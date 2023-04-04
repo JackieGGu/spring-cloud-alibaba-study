@@ -1,0 +1,13 @@
+server:
+  port: 10111
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      discovery:
+        # Nacos 服务发现地址
+        server-addr: 127.0.0.1:8844,127.0.0.1:8846,127.0.0.1:8848
